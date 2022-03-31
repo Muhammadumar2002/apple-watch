@@ -75,11 +75,13 @@ img{
 /* BUTTON */
 .button {
   display: inline-block;
+  min-width: 260px;
   text-decoration: none;
   border: 0;
   background-color: var(--Primary);
   color: #fff;
   text-transform: uppercase ;
+  text-align: center;
   font-weight: bold;
   font-size: 18px;
   line-height: 1.5;
@@ -213,6 +215,10 @@ opacity: 0.6;
   width: 100%;
   max-width: 490px;
 }
+
+.main-part-white .shopping-info-heading{
+  color: #fff;
+}
 .main-part-heading {
   margin-top: 0;
   margin-bottom: 30px;
@@ -226,6 +232,11 @@ opacity: 0.6;
   margin-top: 0;
   border-left: 3px solid #888;
   padding-left: 37px;
+}
+
+.main-part-white .shopping-info-text{
+  color: #fff;
+  border-color: #fff;
 }
 
 /* RETINA BG  */
@@ -290,4 +301,62 @@ opacity: 0.6;
 
 .rectangle:not(:last-child){
   margin-right: 10px;
+}
+
+/* SHOPPING  */
+
+.shopping {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.shopping-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping-info-img{
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+
+.shopping-info {
+  width: 100%;
+  max-width: 490px;
+  margin-right: 110px;
+}
+
+.shopping-info-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #000;
+}
+
+
+.shopping-info-text {
+  color: #777;
+  margin-bottom: 30px;
+  margin-top: 0;
+  border-left: 3px solid #888;
+  padding-left: 37px;
+}
+
+/* RUNNERS */
+
+.Runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image:url(../img/runners\ 1.jpg);
+  background-repeat: no-repeat;
+  background-position: center  center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.runners-main-part {
+  margin-left: auto;
 }
