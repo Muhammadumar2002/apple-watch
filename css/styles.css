@@ -87,6 +87,31 @@ img{
   transition: background-color 0.3 ease;
 }
 
+.features-list-link{
+  display:inline-flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase ;
+  line-height: 1.6;
+  color: var(--Primary);
+  text-decoration: none;
+}
+
+.features-list-link:hover::before {
+  width: 60px;
+}
+
+.features-list-link::before{
+  margin-right: 10px;
+  width: 40px;
+  height: 3px;
+  background-color: var(--Primary);
+  content: "";
+
+}
+
+
 .button:hover{
   background-color: var(--Primary-button);
 }
@@ -214,5 +239,55 @@ opacity: 0.6;
   .hero{
     background-image: url("../img/intro-bg@2x.jpg");
   }
+}
 
+
+/* FEATURES  */
+
+  .features-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .features-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .features-list li:not(:last-child){
+    margin-right: 80px;
+  }
+  .features-list-item {
+    width: 280px;
+  }
+  .features-list-heading {
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .features-list-text {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #333;
+  }
+
+  .features-list-divider{
+    margin-top: 20px;
+    display: flex;
+  }
+  .rectangle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #DDDDDD;
+}
+
+.rectangle:not(:last-child){
+  margin-right: 10px;
 }
