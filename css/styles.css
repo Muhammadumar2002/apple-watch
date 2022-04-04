@@ -1,22 +1,24 @@
 /* CUSTOM PROPORTY */
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Bold.woff2') format('woff2'),
+      url('Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
-      url("../fonts/Roboto-Regular.woff") format("woff");
+  font-family: 'Roboto';
+  src: url('Roboto-Regular.woff2') format('woff2'),
+      url('Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
-      url("../fonts/Roboto-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+
+
 
 :root {
   --Primary:#EA625C;
@@ -279,6 +281,9 @@ opacity: 0.6;
     font-weight: 700;
     margin: 0;
     margin-bottom: 30px;
+  }
+  .heading1{
+
   }
   .features-list-text {
     margin: 0;
